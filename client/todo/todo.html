@@ -1,0 +1,15 @@
+<template name="todo">
+<div class="col-sm-6 col-sm-offset-3">
+        <form class="form-group-lg" id="add-task">
+        <input type="text" name="content" placeholder="Ajouter une nouvelle tâche" class="form-control">
+    </form>
+    <div class="panel-group">
+        {{#each task in tasks}}
+            <div class="panel">
+                {{task.content}} <span class="glyphicon glyphicon-remove pull-right"></span>
+            </div>
+        {{/each}}
+    </div>
+</div>
+</template>
+
